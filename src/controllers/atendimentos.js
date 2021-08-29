@@ -4,6 +4,7 @@ module.exports = (app) => {
   });
 
   app.post('/atendimentos', (request, response) => {
+    console.log('Atendimento enviado');
     console.log(request.body);
     response.send('Você está na rota de atendimentos e está realizando um POST');
   });
